@@ -1,13 +1,33 @@
 .card{
-    height: 350px;
-    width: 250px;
+height: 350px;
+width: 250px;
 }
 
-.propImg{
-    height: 200px;
+.card:hover img{
+    transform: scale(1.2,1.2);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: 250px;
+    opacity: .5;
 }
 
-.row{
-    height: 360px;
-    width: 270px;
+.card img{
+    transform: scale(1,1);
+    transition-duration: 500ms;
+    transition-timing-function: ease-out;
+    height: 250px;
+}
+
+.card-img-wrapper{
+    overflow: hidden;
+    position: relative;
+}
+
+.member-icons{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin-right: auto;
+    margin-left: auto;
 }
